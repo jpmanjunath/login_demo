@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<table>
+		<thead>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Email</td>
+		</thead>
+
+		<thead>
+			<tr th:each="user: ${data}">
+				<td th:text="${user.id}" />
+				<td th:text="${user.name}" />
+				<td th:text="${user.email}" />
+			</tr>
+		</thead>
+	</table>
+
+
+
+</body>
+</html>
